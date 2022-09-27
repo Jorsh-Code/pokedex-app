@@ -1,0 +1,26 @@
+<ul>
+    <!-- <li *ngFor="let item of [1,2,3]">
+        <li routerLink="'/authLazy/enroll' + item ">ir a enroll {{item}}</li>
+    </li> -->
+    <li><a routerLink="/authLazy/login">ir a login</a></li>
+    <li><a routerLink="/authLazy/enroll">ir a registro</a></li>
+    <li><a routerLink="/pokedex">Pokedex</a></li>
+    <li><a routerLink="/pokedex/add">Agregar</a></li>
+    <li><a routerLink="/pokedex/edit/1">Editar</a></li>
+    <li><a routerLink="/pokedex/find">Buscar</a></li>
+    <li><a routerLink="/pokedex/list">Lista</a></li>
+    <li><a routerLink="/pokedex/pokemon/1">Pokemon</a></li>
+</ul>
+
+<input type="text" placeholder="user" [(ngModel)]="user" name="user"><br>
+<input type="password" placeholder="password"  [(ngModel)]="password" name="password"><br>
+
+<button (click)="login()">
+    Login
+</button>
+
+<button (click)="logout()">
+    Logout
+</button>
+
+<span>{{ showSession() }}</span>
